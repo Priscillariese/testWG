@@ -139,9 +139,10 @@
       font-size: 50px;
       font-weight: 400;
       line-height: 61px;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.03rem;
       margin-bottom: 0px;
       color: var(--white-principal);
+      font-weight: bold;
   }
   
   .section-01 .light-button {
@@ -156,10 +157,9 @@
   
   .section-01 p {
       font-size: 36px;
-      line-height: 50px;
-      letter-spacing: 2.9%;
+      letter-spacing: 4%;
       color: var(--white-principal);
-      margin-top: 0px;
+      margin-top: 0.5px;
   }
   
   .light-button {
