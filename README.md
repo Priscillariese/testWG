@@ -1,6 +1,6 @@
 # TestWG - One-Page Website Project
 
-This project aims to create a responsive web page with a specific layout, including a header, footer, navigation, multiple sections, and a form. The goal is to closely match the provided design and integrate the functionality to submit the form and receive the form data in a backend solution.
+This project aims to create a responsive web page with a specific layout, including a header, footer, navigation, multiple sections, and a form. The goal is to closely match the provided design and integrate the functionality to submit the form.
 
 ## Technologies Used
 
@@ -25,6 +25,7 @@ To start the TestWG project, follow these general steps:
 
 2. Use the terminal to navigate to the project folder after cloning:
 
+- cd TestWG
 
 ### Opening the HTML File:
 
@@ -38,7 +39,6 @@ For Linux systems: :penguin: xdg-open index.html
 For macOS: :apple: open index.html
 
 For Windows: :computer: start index.html
-
 
 ## Deployment Link
 
