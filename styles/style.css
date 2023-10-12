@@ -109,7 +109,7 @@
   .section-01 {
       position: relative;
       height: 100vh;
-      filter: grayscale(.35);
+
   }
   
   .section-01 img {
@@ -120,7 +120,8 @@
     top: 0;
     left: 0;
     z-index: -1;
-    filter: blur(1px);
+    opacity: 0.85;
+    filter: brightness(0.5);
   }
   
   .section-01 > div {
