@@ -29,14 +29,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 5px;
       background-color: var(--white-principal);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .navbar .nav-container {
     display: flex;
-    align-items: center;
+    align-items:center;
     width: 100%;
     justify-content: space-between;
   }
@@ -46,18 +46,18 @@
       align-items: center;
       color: var(--text-blue);
       max-width: 330px;
+     padding: 0 0 0 8rem;
   }
   
-  .navbar a {
-      width: 104px;
-      height: 104px;
-      margin-right: 20px;
-  }
+  .navbar img {
+    width: 80%;
+    height: 110px;
+    margin-right: 20px;
+}
   
   .navbar p {
       font-size: 18px;
-      font-weight: 400;
-      line-height: 22px;
+      line-height: 20px;
       letter-spacing: 0.1em;
       text-align: left;
       margin: 0;
@@ -79,7 +79,7 @@
   }
   
   .navbar ul li {
-      margin: 0 10px;
+      margin: 0 16px;
       text-wrap: nowrap;
   }
   
@@ -212,8 +212,8 @@
   
   
   .circle-img {
-      width: 492px;
-      height: 492px;
+      width: 490px;
+      height: 490px;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
