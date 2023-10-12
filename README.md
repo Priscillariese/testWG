@@ -33,9 +33,9 @@ To start the TestWG project, follow these general steps:
    - Navigating to the file in your file manager and double-clicking it.
    - Using the following terminal commands to open the file directly in your default browser:
 
-   For Linux systems: xdg-open index.html
+   -- For Linux systems: xdg-open index.html
 
-   For macOS: open index.html
+   -- For macOS: open index.html
 
    
     For Windows: start index.html
