@@ -162,7 +162,7 @@
   }
   
   .light-button {
-    padding: 1.4rem 4rem;
+    padding: 1rem 2rem;
     background-color: #f6f6f633;
     color: var(--text-blue);
     border: none;
@@ -338,12 +338,12 @@
   
   .right-content {
     display: flex;
-    align-items: center;
+    align-items:center;
   }
   
   .text-footer p {
     display: inline;
-    margin: 0px 20px; 
+    margin: 2px 20px; 
   }
   
   .img-footer img {
@@ -352,6 +352,4 @@
     vertical-align: middle; 
     align-items: center;
   }
-  
-
   
