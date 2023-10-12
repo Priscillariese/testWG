@@ -2,12 +2,12 @@
     max-width: 1400px;
     margin: auto;
     width: 100%;
+
 }
 
 .container {
     max-width: 1140px;
     margin: auto;
-    width: 100%;
     padding: 3rem 1rem;
 }
 
@@ -15,7 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
 
 .flex-horizontal-card .right { 
     width: 60%;
@@ -26,6 +29,21 @@
 
 .flex-horizontal-card .left {
     margin-right: 3rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .flex-horizontal-card .right { 
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex-horizontal-card .left { 
+        margin: 0;
+    }
+
+    .flex-horizontal-card .right .description{ 
+        padding-right: 0rem;
+    }
 }
 
 .px-1 {

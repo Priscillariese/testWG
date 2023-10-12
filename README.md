@@ -7,6 +7,11 @@ This project aims to create a responsive web page with a specific layout, includ
 - HTML
 - CSS
 
+## Responsive Layout
+
+This project has been developed to be fully responsive screen sizes.
+
+
 ## Getting Started
 
 To start the TestWG project, follow these general steps:

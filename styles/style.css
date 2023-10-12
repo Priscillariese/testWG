@@ -1,362 +1,485 @@
 
 @font-face {
-    font-family: "inter-medium";
-    src: url(../assets/Avenir_DesktopFonts/avenir_otf/AvenirLTStd-Medium.otf);
-  }
-  
-  :root {
-      --white-principal: #FFFFFF;
-      --gray-secundary: #F6F6F6;
-      --text-blue: #012E5C;
-      --title-aqua: #51C0F4;
-      --form-bege: #F5F5F5;
-      --btn-black: #000000;
-  }
-  
-  .bg-grey {
-    background-color: var(--gray-secundary);
-  }
-  
-  body {
-      background-color: var(--white-principal);
-      margin: 0;
-      font-family: 'inter-medium';
-  }
-  
-  /* Navbar */
-  
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px;
-      background-color: var(--white-principal);
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar .nav-container {
-    display: flex;
-    align-items:center;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .navbar .left-content {
-      display: flex;
-      align-items: center;
-      color: var(--text-blue);
-      max-width: 330px;
-     padding: 0 0 0 7rem;
-  }
-  
-  .navbar img {
-    width: 80%;
-    height: 110px;
-    margin-right: 20px;
-}
-  
-  .navbar p {
-      font-size: 18px;
-      line-height: 20px;
-      letter-spacing: 0.1em;
-      text-align: left;
-      margin: 0;
-  }
-
-  .navbar p span {
-    color: var(--text-blue);
-    font-weight: bold;
+  font-family: "inter-medium";
+  src: url(../assets/Avenir_DesktopFonts/avenir_otf/AvenirLTStd-Medium.otf);
 }
 
+:root {
+    --white-principal: #FFFFFF;
+    --gray-secundary: #F6F6F6;
+    --text-blue: #012E5C;
+    --title-aqua: #51C0F4;
+    --form-bege: #F5F5F5;
+    --btn-black: #000000;
+}
 
-  
-  .navbar ul {
-      list-style-type: none;
-      text-transform: uppercase;
-      display: flex;
-      margin-right: 20px;
+/* section {
+  padding: 0rem 1rem;
+} */
 
-  }
-  
-  .navbar ul li {
-      margin: 0 11px;
-      text-wrap: nowrap;
+.bg-grey {
+  background-color: var(--gray-secundary);
+}
 
-  }
-  
-  .navbar ul li a {
-      color: var(--text-blue);
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      text-decoration: none;
-      position: relative;
-      font-weight: bold;
-  }
-  
-  
-  .navbar ul li a:hover { 
-    padding-bottom: .25rem;
-    border-bottom: 6px solid var(--title-aqua);
-  }
-  
-  .navbar ul li a.active { 
-    padding-bottom: .25rem;
-    border-bottom: 6px solid var(--title-aqua);
-  }
-  
-  /*Section 01 */
-  .section-01 {
-      position: relative;
-      height: 100vh;
-
-  }
-  
-  .section-01 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.85;
-    filter: blur(1.5px) brightness(0.5);
-  }
-  
-  .section-01 > div {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100%;
-  }
-  
-  .section-01 h1 {
-    margin-top: 5rem;
-      font-size: 38px;
-      letter-spacing: 0.03rem;
-      margin-bottom: 0px;
-      color: var(--white-principal);
-   
-  }
-  
-  .section-01 .light-button {
-    color: var(--white-principal);
-  }
-  
-  .section-01 .light-button::after { 
-    content: url(../assets/img/Pfad\ 200.svg);
-    padding-left: 1rem;
-  }
-  
-  
-  .section-01 p {
-      font-size: 27px;
-      letter-spacing: 4.5%;
-      color: var(--white-principal);
-      margin-top: 10px;
-      filter: brightness(0.95);
-
-  }
-  
-  .light-button {
-    padding: 1rem 3rem;
-    background-color: #f6f6f633;
-    color: var(--text-blue);
-    border: none;
-    font-size: 17px;
-    line-height: 24.2px;
-    letter-spacing: 3%;
-    text-transform: uppercase;
-    margin-top: 16px;
-    border-radius: 7px;
-    cursor: pointer;
-    border: 1px solid var(--title-aqua)
-  }
-  
-  .light-button::after { 
-    content: url(../assets/img/Pfad\ 203.svg);
-    padding-left: 1rem;
-  }
-  
-  /* Section 02 */
-  .section-02 {
-      text-align: center;
-  }
-  
-  .title-light-blue {
-      color: var(--title-aqua) !important;
-      font-size: 22px;
-      line-height: 26.63px;
-      letter-spacing: 10%;
-      text-transform: uppercase;
-  }
-  
-  .title-bold {
-      color: var(--text-blue);
-      font-size: 50px;
-      line-height: 60px;
-      letter-spacing: 3%;
-      margin: 0px;
-  }
-  
-  .description {
-      color: var(--text-blue);
-      font-size: 23px;
-      line-height: 36px;
-      letter-spacing: 4%;
-  }
-  
-  
-  .circle-img {
-      width: 490px;
-      height: 490px;
-      border-radius: 50%;
-      overflow: hidden;
-      position: relative;
-      object-fit: cover;
-  }
-  
-  
-  /* Section 04 */
-  
-  .section-04 {
-      text-align: center;
-      align-items: center; 
-    }
-    
-  
-    .contact span {
-      font-weight: bold;
-    }
-    
-    .team-members {
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    .team-member {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-    
-    .team-member img {
-      width: 350px;
-      height: 353px;
-      border-radius: 07px;
-    }
-    .team-member-info {
-      width: 100%;
-      text-align: left;
-      color: var(--text-blue);
-    }
-  
-    .team-member-info p {
-      margin-top: .5rem;
-      margin-bottom: 0rem;
-    }
-  
-    .team-member-info .name {
-      font-weight: bold;
-      font-size: 32px;
-    }
-    
-    .team-member-info .role {
-      font-size: 20px;
-      margin-bottom: 3rem;
-    }
-    
-    .team-member-info .contact {
-      font-size: 20px;
-      margin-bottom: .5rem;
-  
-    
-    }
-    
-    .team-member-info .email {
-      color: var(--title-aqua); 
-      font-size: 16px;
-      text-decoration: none;
-      border-bottom: 1px solid var(--title-aqua);
-    }
-  
-    .team-member-info .email::after { 
-      content: url(../assets/img/Pfad\ 200aqua.svg);
-      margin-left: 5px;
-    }
-  
-    
-  
-  .section-06 {
-    text-align: center;
-    padding: 50.5px;
+body {
     background-color: var(--white-principal);
-  }
-  
-  
-    .section-06 .contact-form {
-      margin-top: 40px;
-    }
-    
-    .section-06 .form-group {
-      margin-bottom: 20px;
-    }
-    
-  
-  
-  /* Footer*/
-  .footer {
-    background-color: var(--gray-secundary);
-    color: var(--text-blue);
-    padding: 20px 20px 20px 20px;
-  }
-  
-  .foot-container {
+    margin: 0;
+    font-family: 'inter-medium';
+}
+
+/* Navbar */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .left-content {
+    padding: 5px;
+    background-color: var(--white-principal);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 120px;
+}
+
+.navbar .nav-container {
+  display: flex;
+  align-items:center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar .left-content {
+    display: flex;
+    align-items: center;
+    color: var(--text-blue);
+    max-width: 330px;
+   padding: 0 0 0 7rem;
+}
+
+.navbar img {
+  height: 70px;
+  margin-right: 20px;
+}
+
+.navbar p {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin: 0;
+}
+
+.navbar p span {
+  color: var(--text-blue);
+  font-weight: bold;
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.navbar ul li {
+    margin: 0 11px;
+    text-wrap: nowrap;
+
+}
+
+.navbar ul li a {
+    color: var(--text-blue);
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
     text-align: center;
-    padding: 0 0 0 8rem;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.navbar ul li a:hover { 
+  padding-bottom: .25rem;
+  border-bottom: 6px solid var(--title-aqua);
+}
+
+.navbar ul li a.active { 
+  padding-bottom: .25rem;
+  border-bottom: 6px solid var(--title-aqua);
+}
+
+/*Section 01 */
+.section-01 {
+    position: relative;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+.section-01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.85;
+  filter: blur(1.5px) brightness(0.5);
+}
+
+.section-01 > div {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.section-01 h1 {
+  margin-top: 5rem;
+    font-size: 38px;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0px;
+    color: var(--white-principal);
+ 
+}
+
+.section-01 .light-button {
+  color: var(--white-principal);
+}
+
+.section-01 .light-button::after { 
+  content: url(../assets/img/Pfad\ 200.svg);
+  padding-left: 1rem;
+}
+
+
+.section-01 p {
+    font-size: 27px;
+    letter-spacing: 4.5%;
+    color: var(--white-principal);
+    margin-top: 10px;
+    filter: brightness(0.95);
+
+}
+
+.light-button {
+  padding: 1rem 3rem;
+  background-color: #f6f6f633;
+  color: var(--text-blue);
+  border: none;
+  font-size: 17px;
+  line-height: 24.2px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  margin-top: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid var(--title-aqua)
+}
+
+.light-button::after { 
+  content: url(../assets/img/Pfad\ 203.svg);
+  padding-left: 1rem;
+}
+
+/* Section 02 */
+.section-02 {
+    text-align: center;
+}
+
+.title-light-blue {
+    color: var(--title-aqua) !important;
+    font-size: 22px;
+    line-height: 26.63px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+}
+
+.title-bold {
+    color: var(--text-blue);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 3%;
+    margin: 0px;
+}
+
+.description {
+    color: var(--text-blue);
+    font-size: 23px;
+    line-height: 36px;
+    letter-spacing: 4%;
+}
+
+
+.circle-img {
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+
+
+
+/* Section 04 */
+
+.section-04 {
+    text-align: center;
+    align-items: center; 
   }
   
-  .title-light-blue {
-    color: var(--text-blue);
-    font-size: 20px ; 
-  }
-  
-  .bold {
-    color: var(--text-blue);
+
+  .contact span {
     font-weight: bold;
   }
   
-  
-  .right-content {
+  .team-members {
     display: flex;
-    align-items:center;
-    margin-right: 90px; 
+    justify-content: space-around;
   }
   
-  .text-footer p {
-    display: inline;
-    margin: 2px 20px; 
-    font-weight: center;
- 
-  }
-  
-  .img-footer img {
-    width: 20px; 
-    margin-right: 20px;
-    vertical-align: middle; 
+  .team-member {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 20px;
   }
   
+  .team-member img {
+    width: 100%;
+    height: 353px;
+    border-radius: 07px;
+  }
+  .team-member-info {
+    width: 100%;
+    text-align: left;
+    color: var(--text-blue);
+  }
+
+  .team-member-info p {
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+  }
+
+  .team-member-info .name {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .team-member-info .role {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+  
+  .team-member-info .contact {
+    font-size: 20px;
+    margin-bottom: .5rem;
+
+  
+  }
+  
+  .team-member-info .email {
+    color: var(--title-aqua); 
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--title-aqua);
+  }
+
+  .team-member-info .email::after { 
+    content: url(../assets/img/Pfad\ 200aqua.svg);
+    margin-left: 5px;
+  }
+
+  
+
+.section-06 {
+  text-align: center;
+  padding: 50.5px;
+  background-color: var(--white-principal);
+}
+
+
+  .section-06 .contact-form {
+    margin-top: 40px;
+  }
+  
+  .section-06 .form-group {
+    margin-bottom: 20px;
+  }
+  
+
+
+/* Footer*/
+.footer {
+  background-color: var(--gray-secundary);
+  color: var(--text-blue);
+  padding: 20px 20px 20px 20px;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  text-align: center;
+  padding: 0 0 0 8rem;
+}
+
+.title-light-blue {
+  color: var(--text-blue);
+  font-size: 20px ; 
+}
+
+.bold {
+  color: var(--text-blue);
+  font-weight: bold;
+}
+
+
+.right-content {
+  display: flex;
+  align-items:center;
+  margin-right: 90px; 
+}
+
+.text-footer p {
+  display: inline;
+  margin: 2px 20px; 
+  font-weight: center;
+
+}
+
+.img-footer img {
+  width: 20px; 
+  margin-right: 20px;
+  vertical-align: middle; 
+  align-items: center;
+}
+
+.burger-menu-container {
+  display: none;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .burger-menu-container {
+    display: block;
+    width: 32px;
+  }
+
+  .burger-menu-container .solid-element {
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    height: 4px;
+    background-color: black;
+  }
+  .navbar {
+    position: relative;
+    height: 80px;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar ul { 
+    flex-wrap: wrap;
+    padding-left: 1rem;
+  }
+
+  .navbar ul li { 
+    margin: 0;
+    width: 100%;
+    padding-bottom: .5rem;
+  }
+  .navbar .right-content {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    background: white;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar img {
+    height: 64px;
+    margin-right: 0px;
+  }
+
+  .navbar p {
+    display: none;
+  }
+
+  .circle-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .team-member {
+    width: 42%;
+    padding: 1rem;
+  }
+
+  .team-members {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .foot-container { 
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .navbar .left-content {
+    padding: 0rem;
+  }
+
+  .foot-container .right-content {
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .text-footer {
+    width: 100%;
+  }
+
+  .img-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .img-footer img.f { 
+    height: 24px;
+  }
+
+  .team-member img {
+    height: 280px;
+  }
+
+  .form-button-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .team-member {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+

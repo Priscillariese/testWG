@@ -18,10 +18,16 @@
                         <a href=""><img src="./assets/img/logo.svg" alt="logo"></a>
                         <p><span>DIGITAL PRODUCT</span>  DEVELOMPMENT</p>
                     </div>
+
+                    <div id="burgerMenu" class="burger-menu-container">
+                        <span class="solid-element"></span>
+                        <span class="solid-element"></span>
+                        <span class="solid-element"></span>
+                    </div>
                
-                    <div class="right-content">
+                    <div id="navbarItems" class="right-content">
                         <ul>
-                            <li><a href="#home" class="active">HOME</a></li>
+                            <li><a href="#home">HOME</a></li>
                             <li><a href="#who">WHO ARE WE</a></li>
                             <li><a href="#office">OUR OFFICE</a></li>
                             <li><a href="#team">THE TEAM</a></li>
@@ -34,7 +40,7 @@
     </header>
 <main>
 
-<section class="section-01">
+<section id="home" class="section-01 px-1">
     <div>
         <img src="./assets/img/section1.jpg" alt="background">
         <h1>Creating digital experiences</h1>
@@ -44,7 +50,7 @@
         </button>
     </div>
 </section>
-<section class="section-02 container">
+<section id="who" class="section-02 container px-1">
     <p class="title-light-blue">Who we are</p>
     <h3 class="title-bold">Pushing digital since 2011</h3>
     <p class="description">
@@ -53,7 +59,7 @@
     </p>
 </section>
 
-<section class="bg-grey py-3">
+<section id="office" class="bg-grey py-3 px-1">
     <div class="flex-horizontal-card">
         <div class="left">
             <img class="circle-img" src="./assets/img/section3.jpg">
@@ -70,7 +76,7 @@
 </div>
 </section>
 
-<section class="container-xl section-04 py-3">
+<section id="team" class="container-xl section-04 py-3">
     <p class="title-light-blue">Meet the team</p>
     <h3 class="title-bold">It is people over money!</h3>
     <div class="team-members">
@@ -102,9 +108,9 @@
         </div>
         </div>
     </div>
-    </section>
+</section>
 
-<section class="bg-grey py-3">
+<section class="bg-grey py-3 px-1">
     <div class="flex-horizontal-card">
         <div class="left">
             <img class="circle-img" src="./assets/img/section5.jpg" alt="team photo">
@@ -119,7 +125,7 @@
     </div>
 </section>
 
-<section class="container section-06">
+<section id="contact" class="container section-06 px-1">
     <h3 class="title-bold">Nehmen Sie Kontakt zu uns auf</h3>
 
     <form class="contact-form">
@@ -152,17 +158,20 @@
                 <P> *REQUIRED FIELD</P>
             </div>
         </div>
-        <button class="light-button" type="submit">Abschicken</button>
+        <div class="form-button-container">
+            <button class="light-button" type="submit">Abschicken</button>
+        </div>
     </form>
 </section>
 
-</main><footer class="footer content">
+</main>
+<footer class="footer content">
     <div class="container-xl">
       <div class="foot-container">
         <div class="left-content">
           <p >PART OF <span class="bold">W1 GROUP</span></p>
         </div>
-  
+
         <div class="right-content">
           <div class="text-footer">
             <p>Impressum</p>
@@ -175,6 +184,7 @@
         </div>
       </div>
     </div>
-  </footer>
+</footer>
 </body>
+<script src="./script.js"></script>
 </html>
