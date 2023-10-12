@@ -137,9 +137,8 @@
   }
   
   .section-01 h1 {
-      font-size: 50px;
-      font-weight: 400;
-      line-height: 61px;
+    margin-top: 5rem;
+      font-size: 38px;
       letter-spacing: 0.03rem;
       margin-bottom: 0px;
       color: var(--white-principal);
@@ -157,18 +156,20 @@
   
   
   .section-01 p {
-      font-size: 36px;
+      font-size: 27px;
       letter-spacing: 4.5%;
       color: var(--white-principal);
-      margin-top: 0.5px;
+      margin-top: 10px;
+      filter: brightness(0.95);
+
   }
   
   .light-button {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: #f6f6f633;
     color: var(--text-blue);
     border: none;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 24.2px;
     letter-spacing: 3%;
     text-transform: uppercase;
