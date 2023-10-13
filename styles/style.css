@@ -27,6 +27,32 @@ body {
     font-family: 'inter-medium';
 }
 
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  width: 50px; 
+  height: 50px; 
+  background-color: white;
+  border: 1px solid #f3ecec;
+  border-radius: 4px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+#scrollToTopButton::before {
+  content: "^"; 
+  font-size: 25px;
+  color: var(--text-blue); 
+  line-height: 40px; 
+  text-align: center;
+}
+
+
+
 /* Navbar */
 
 .navbar {
