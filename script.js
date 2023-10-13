@@ -1,7 +1,7 @@
-const burgerMenu = document.getElementById("burgerMenu")
-const navbarItems = document.getElementById("navbarItems")
+let burgerMenu = document.getElementById("burgerMenu")
+let navbarItems = document.getElementById("navbarItems")
 
-const burgerMenuOpened = false
+let burgerMenuOpened = false
 burgerMenu.addEventListener("click", (e) => {
     burgerMenuOpened = !burgerMenuOpened
     if(burgerMenuOpened) {
