@@ -4,6 +4,29 @@
   src: url(../assets/Avenir_DesktopFonts/avenir_otf/AvenirLTStd-Medium.otf);
 }
 
+@font-face {
+  font-family: 'Avenir Black';
+  src: url('avenir-black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('avenir-book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  src: url('avenir-regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
 :root {
     --white-principal: #FFFFFF;
     --gray-secundary: #F6F6F6;
@@ -24,8 +47,22 @@
 body {
     background-color: var(--white-principal);
     margin: 0;
-    font-family: 'inter-medium';
-}
+
+  }
+  p .title-light-blue {font-family: 'Avenir Regular', sans-serif;
+  }
+
+    h1 {
+      font-family: 'Avenir Black', sans-serif;
+    }
+    
+    p {
+      font-family: 'Avenir Book', sans-serif;
+    }
+    
+    button { font-family: 'Avenir Regular', sans-serif;
+  }
+
 
 #scrollToTopButton {
   position: fixed;
@@ -50,8 +87,6 @@ body {
   line-height: 40px; 
   text-align: center;
 }
-
-
 
 /* Navbar */
 
